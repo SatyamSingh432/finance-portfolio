@@ -9,7 +9,9 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:8080/api/portfolio");
+      const res = await fetch(
+        "https://finance-portfolio-jvtb.onrender.com/api/portfolio"
+      );
       const json = await res.json();
       setData(json);
     } catch (error) {
