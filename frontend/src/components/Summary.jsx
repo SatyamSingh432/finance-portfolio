@@ -2,9 +2,9 @@ import React from "react";
 
 function Summary({ summary }) {
   return (
-    <div className="bg-white shadow p-4 rounded-lg mb-6">
+    <div className="bg-white shadow p-4 rounded-lg  mb-6">
       <h2 className="text-xl font-semibold mb-4">Portfolio Summary</h2>
-      <div className="grid grid-cols-4 gap-4 text-center">
+      <div className=" gap-4 flex flex-wrap justify-between text-center">
         <div>
           <p className="text-gray-500">Total Investment</p>
           <p className="text-2xl font-bold">${summary.totalInvestment}</p>
