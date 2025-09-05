@@ -25,25 +25,14 @@ A full-stack finance portfolio dashboard built with React, Vite, Express, and Mo
 ```
 finance-portfolio/
 ├── backend/
-│   ├── .env
 │   ├── package.json
 │   └── src/
 │       ├── data.js
 │       └── index.js
 ├── frontend/
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── public/
-│   │   └── vite.svg
 │   └── src/
 │       ├── App.css
 │       ├── App.jsx
-│       ├── index.css
-│       ├── main.jsx
-│       ├── assets/
-│       │   └── react.svg
 │       └── components/
 │           ├── HoldingsTable.jsx
 │           ├── Sector.jsx
