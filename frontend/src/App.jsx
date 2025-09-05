@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Summary from "./components/Summary";
+import Sector from "./components/Sector";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <div className="p-6 max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Portfolio Dashboard</h1>
       <Summary summary={data.summary} />
+      <Sector sectors={data.sectors} />
     </div>
   );
 }
