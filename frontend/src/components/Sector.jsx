@@ -2,7 +2,7 @@ import React from "react";
 
 function Sector({ sectors }) {
   return (
-    <div className="bg-white shadow p-4 rounded-lg mb-6">
+    <div className="bg-white p-4  mb-6">
       <h2 className="text-xl font-semibold mb-4">Sector Breakdown</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {sectors.map((sector, idx) => (

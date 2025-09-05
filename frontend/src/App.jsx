@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Summary from "./components/Summary";
 import Sector from "./components/Sector";
+import HoldingsTable from "./components/HoldingsTable";
 import "./App.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
-    const interval = setInterval(fetchData, 15000);
+    const interval = setInterval(fetchData, 10000);
     return () => clearInterval(interval);
   }, []);
 
@@ -29,6 +30,7 @@ function App() {
       <h1 className="text-3xl font-bold mb-6">Portfolio Dashboard</h1>
       <Summary summary={data.summary} />
       <Sector sectors={data.sectors} />
+      <HoldingsTable holdings={data.holdings} />
     </div>
   );
 }
